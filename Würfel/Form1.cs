@@ -35,5 +35,10 @@ namespace Würfel
             // Setze den Wert im Label
             label1.Text = zufall.ToString();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

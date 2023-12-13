@@ -43,13 +43,14 @@
             this.label1.Size = new System.Drawing.Size(51, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(245, 315);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 30);
+            this.label2.Size = new System.Drawing.Size(0, 20);
             this.label2.TabIndex = 1;
             // 
             // Wurf
@@ -57,7 +58,7 @@
             this.Wurf.AutoSize = true;
             this.Wurf.Location = new System.Drawing.Point(92, 315);
             this.Wurf.Name = "Wurf";
-            this.Wurf.Size = new System.Drawing.Size(152, 30);
+            this.Wurf.Size = new System.Drawing.Size(101, 20);
             this.Wurf.TabIndex = 2;
             this.Wurf.Text = "Letzter Wurf:";
             this.Wurf.Click += new System.EventHandler(this.label3_Click);
