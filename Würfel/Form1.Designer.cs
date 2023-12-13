@@ -40,9 +40,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(509, 99);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 20);
+            this.label1.Size = new System.Drawing.Size(13, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label1.Text = " ";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
@@ -78,9 +78,10 @@
             this.Letzter.AutoSize = true;
             this.Letzter.Location = new System.Drawing.Point(276, 315);
             this.Letzter.Name = "Letzter";
-            this.Letzter.Size = new System.Drawing.Size(51, 20);
+            this.Letzter.Size = new System.Drawing.Size(18, 20);
             this.Letzter.TabIndex = 4;
-            this.Letzter.Text = "label3";
+            this.Letzter.Text = "0";
+            this.Letzter.Click += new System.EventHandler(this.Letzter_Click);
             // 
             // Form1
             // 

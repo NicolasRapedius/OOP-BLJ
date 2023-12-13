@@ -27,18 +27,27 @@ namespace Würfel
 
         }
 
+        private int letztesErgebnis;
+        private int vorherigesErgebnis;
+
         private void button1_Click(object sender, EventArgs e)
         {
-            // Erzeuge eine zufällige Zahl zwischen 1 und 6
             int zufall = new Random().Next(1, 7);
-
-            // Setze den Wert im Label
+            vorherigesErgebnis = letztesErgebnis;
+            letztesErgebnis = zufall;
             label1.Text = zufall.ToString();
+            Letzter.Text = vorherigesErgebnis.ToString();
         }
+
 
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Letzter_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
