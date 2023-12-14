@@ -23,24 +23,21 @@ namespace Rechteck
             int tbreite = Convert.ToInt32(textbreite.Text);
             int thoehe = Convert.ToInt32(texthoehe.Text);
 
-            int flaeche = tbreite * thoehe;
+
+            Rechteck rechteck = new Rechteck();
+            rechteck.Width = tbreite;
+            rechteck.Height = thoehe; 
+
+            double flaeche = rechteck.GetArea();
 
             textBox3.Text = flaeche.ToString();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void Beenden_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
     }
 }

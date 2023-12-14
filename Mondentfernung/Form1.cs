@@ -65,11 +65,11 @@ namespace Mondentfernung
             if (double.TryParse(textBox1.Text, out geschwindigkeit) && geschwindigkeit > 0)
             {
                 double reisedauerInStunden = EntfernungErdeMond / geschwindigkeit;
-                if (radioButton2.Checked) // Stunden
+                if (radioButton2.Checked)
                 {
                     textBox2.Text = $" {reisedauerInStunden} Stunden";
                 }
-                else if (radioButton1.Checked) // Tage
+                else if (radioButton1.Checked) 
                 {
                     double reisedauerInTagen = reisedauerInStunden / 24;
                     textBox2.Text = $" {reisedauerInTagen} Tage";

@@ -28,22 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelAktuellerWurf = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.Wurf = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.Letzter = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // labelAktuellerWurf
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(509, 99);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(13, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = " ";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.labelAktuellerWurf.AutoSize = true;
+            this.labelAktuellerWurf.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAktuellerWurf.Location = new System.Drawing.Point(509, 99);
+            this.labelAktuellerWurf.Name = "labelAktuellerWurf";
+            this.labelAktuellerWurf.Size = new System.Drawing.Size(47, 48);
+            this.labelAktuellerWurf.TabIndex = 0;
+            this.labelAktuellerWurf.Text = "0";
+
             // 
             // label2
             // 
@@ -61,7 +62,7 @@
             this.Wurf.Size = new System.Drawing.Size(101, 20);
             this.Wurf.TabIndex = 2;
             this.Wurf.Text = "Letzter Wurf:";
-            this.Wurf.Click += new System.EventHandler(this.label3_Click);
+          
             // 
             // button1
             // 
@@ -81,7 +82,7 @@
             this.Letzter.Size = new System.Drawing.Size(18, 20);
             this.Letzter.TabIndex = 4;
             this.Letzter.Text = "0";
-            this.Letzter.Click += new System.EventHandler(this.Letzter_Click);
+
             // 
             // Form1
             // 
@@ -92,10 +93,9 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Wurf);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelAktuellerWurf);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -103,7 +103,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelAktuellerWurf;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label Wurf;
         private System.Windows.Forms.Button button1;
