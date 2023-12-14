@@ -62,17 +62,24 @@ namespace Mondentfernung
         private void button1_Click(object sender, EventArgs e)
         {
             double geschwindigkeit;
-            if (double.TryParse(textBox1.Text, out geschwindigkeit) && geschwindigkeit > 0)
+            if (double.TryParse(textBoxGeschwindigkeit.Text, out geschwindigkeit) && geschwindigkeit > 0)
             {
-                double reisedauerInStunden = EntfernungErdeMond / geschwindigkeit;
+                
+                Mondreise mond = new Mondreise(geschwindigkeit);
+
+           
                 if (radioButton2.Checked)
                 {
+                    
+                    double reisedauerInStunden = mond.GetTravelDurationHours(); //mond.GetTravelDurationHours();
                     textBox2.Text = $" {reisedauerInStunden} Stunden";
                 }
                 else if (radioButton1.Checked) 
                 {
-                    double reisedauerInTagen = reisedauerInStunden / 24;
+                    double reisedauerInTagen = mond.GetTravelDurationDays();
+                     //mond.GetTravelDurationDays();
                     textBox2.Text = $" {reisedauerInTagen} Tage";
+                    
                 }
             }
             else

@@ -12,9 +12,13 @@ namespace Warenkorb
 {
     public partial class Warenkorb : Form
     {
-        public Warenkorb()
+        
+
+        public Warenkorb(List<OrderItem>orderItems)
         {
             InitializeComponent();
         }
+
+       
     }
 }

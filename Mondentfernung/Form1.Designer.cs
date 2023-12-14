@@ -31,7 +31,7 @@
             this.Reisebox = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxGeschwindigkeit = new System.Windows.Forms.TextBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -43,7 +43,7 @@
             // 
             this.Reisebox.Controls.Add(this.button1);
             this.Reisebox.Controls.Add(this.label1);
-            this.Reisebox.Controls.Add(this.textBox1);
+            this.Reisebox.Controls.Add(this.textBoxGeschwindigkeit);
             this.Reisebox.Controls.Add(this.radioButton2);
             this.Reisebox.Controls.Add(this.radioButton1);
             this.Reisebox.Location = new System.Drawing.Point(12, 12);
@@ -74,13 +74,13 @@
             this.label1.Text = "Geschwindigkeit km/h";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
+            // textBoxGeschwindigkeit
             // 
-            this.textBox1.Location = new System.Drawing.Point(203, 151);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(118, 26);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBoxGeschwindigkeit.Location = new System.Drawing.Point(203, 151);
+            this.textBoxGeschwindigkeit.Name = "textBoxGeschwindigkeit";
+            this.textBoxGeschwindigkeit.Size = new System.Drawing.Size(118, 26);
+            this.textBoxGeschwindigkeit.TabIndex = 2;
+            this.textBoxGeschwindigkeit.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // radioButton2
             // 
@@ -149,7 +149,7 @@
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxGeschwindigkeit;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label2;
     }

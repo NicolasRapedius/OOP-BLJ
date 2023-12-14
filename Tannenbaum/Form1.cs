@@ -13,10 +13,7 @@ namespace Tannenbaum
 
     public partial class Form1 : Form
     {
-        public int Stammbreite { get; set; }
-        public int Stammhoehe { get; set; }
-        public int Kronenhoehe { get; set; }
-        public string Zeichnung { get; private set; }
+       
 
         
 
@@ -27,53 +24,23 @@ namespace Tannenbaum
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
 
-        }
 
 
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int Kronenhoehe = Convert.ToInt32(textBoxKronenHoehe.Text.ToString());
-            int Stammbreite = Convert.ToInt32(textBoxStammBreite.Text.ToString());
-            int Stammhoehe = Convert.ToInt32(textBoxStammHoehe.Text.ToString());
+            int Kronenhoehe = Convert.ToInt32(textBoxKronenHoehe.Text);
+            int Stammbreite = Convert.ToInt32(textBoxStammBreite.Text);
+            int Stammhoehe = Convert.ToInt32(textBoxStammHoehe.Text);
 
-            string zeichnung = Zeichne(Kronenhoehe, Stammbreite, Stammhoehe);
-            textBoxAusgabe.Text = zeichnung;
+           Tanne t =  new Tanne(Stammbreite, Stammhoehe, Kronenhoehe);
+            t.Zeichne();
+            textBoxAusgabe.Text = t.Zeichnung;
         }
 
-        private string Zeichne(int höheKrone, int breiteStamm, int höheStamm)
-        {
-            StringBuilder sb = new StringBuilder();
-            for (int i = 1; i <= höheKrone; i++)
-            {
-                for (int j = 1; j <= höheKrone - i; j++)
-                {
-                    sb.Append(" ");
-                }
-                for (int k = 1; k <= 2 * i - 1; k++)
-                {
-                    sb.Append("*");
-                }
-                sb.AppendLine();
-            }
-
-            for (int i = 0; i < höheStamm; i++)
-            {
-                for (int j = 1; j <= höheKrone - breiteStamm / 2; j++)
-                {
-                    sb.Append(" ");
-                }
-                for (int k = 1; k <= breiteStamm; k++)
-                {
-                    sb.Append("*");
-                }
-                sb.AppendLine();
-            }
-            return sb.ToString();
-        }
+        
+        
     }
 }
 
